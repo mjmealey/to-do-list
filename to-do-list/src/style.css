@@ -32,9 +32,10 @@ nav {
   flex-direction: column;
 }
 
-#todayToDo {
+#inboxToDo {
   position:relative;
   right:25rem;
+  color:green;
 }
 
 #addTask {
@@ -55,7 +56,6 @@ nav {
 #free {
   font-weight:lighter;
   position:relative;
-  top: 10rem;
 }
 
 .plus {
@@ -79,6 +79,7 @@ nav {
     border-color:lightgreen;
     color:green;
     cursor:pointer;
+    font-size:1em;
     width:14.02rem;   
 }
 
@@ -89,6 +90,7 @@ nav {
 
 .tabText {
     position:relative;
-    right:5rem;
+    right:4rem;
+    color:green;
     font-size:1.1em;
 }
