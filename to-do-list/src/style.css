@@ -32,6 +32,11 @@ nav {
   flex-direction: column;
 }
 
+#toDos {
+  position:relative;
+  top:2rem;
+}
+
 #inboxToDo {
   position:relative;
   right:25rem;
@@ -53,7 +58,7 @@ nav {
   color:green;
 }
 
-#free {
+#noTasks {
   font-weight:lighter;
   position:relative;
 }
