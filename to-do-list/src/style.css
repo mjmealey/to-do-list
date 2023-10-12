@@ -1,5 +1,6 @@
 body {
   overflow: hidden;
+  background-color:#e6ffe6 ;
 }
 header {
   color: white;
@@ -14,7 +15,7 @@ header {
 #logo {
   margin-right: auto;
   font-family: "Gabarito", sans-serif;
-  padding:12px;
+  padding: 12px;
 }
 
 nav {
@@ -24,33 +25,44 @@ nav {
   padding: 20px;
 }
 
+#toDos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.plus {
+  display: flex;
+}
+
 #sidebar {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   background-color: lightgreen;
-  width: 11.5rem;
-  height: 80rem;
+  width: 120rem;
   position: relative;
-  bottom: 0.5rem;
-  right: 0.5rem;
+  top:2rem;
+  left:20.5rem;
 }
 
 .navBtn {
-    background-color: lightgreen;
-    border-style:solid;
-    border-color:lightgreen;
-    color:green;
-    cursor:pointer;
-    width:14.02rem;   
+  justify-content: center;
+  background-color: lightgreen;
+  border-style: solid;
+  border-color: lightgreen;
+  color: green;
+  cursor: pointer;
+  width: 5rem;
 }
 
 .navBtn:hover {
-    border-color:#e6ffe6;
-    background-color: #e6ffe6;
+  border-color: #e6ffe6;
+  background-color: #e6ffe6;
 }
 
 .tabText {
-    position:relative;
-    right:5rem;
-    font-size:1.1em;
+  position: relative;
+  right: 5rem;
+  font-size: 1.1em;
 }
