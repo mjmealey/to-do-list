@@ -1,6 +1,6 @@
 body {
   overflow: hidden;
-  background-color:#e6ffe6 ;
+  background-color: #e6ffe6;
 }
 header {
   color: white;
@@ -15,7 +15,7 @@ header {
 #logo {
   margin-right: auto;
   font-family: "Gabarito", sans-serif;
-  padding: 12px;
+  padding:12px;
 }
 
 nav {
@@ -26,43 +26,69 @@ nav {
 }
 
 #toDos {
-  display: flex;
+  display:flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
+#todayToDo {
+  position:relative;
+  right:25rem;
+}
+
+#addTask {
+  position:relative;
+  right:23rem;
+  bottom:0.5rem;
+  background-color: #e6ffe6;
+  border-style:solid;
+  border-color: #e6ffe6;
+  cursor:pointer;
+  font-size:1em;
+}
+
+#addTask:hover {
+  color:green;
+}
+
+#free {
+  font-weight:lighter;
+  position:relative;
+  top: 10rem;
+}
+
 .plus {
-  display: flex;
+  display:flex;
 }
 
 #sidebar {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   background-color: lightgreen;
-  width: 120rem;
+  width: 11.5rem;
+  height: 80rem;
   position: relative;
-  top:2rem;
-  left:20.5rem;
+  bottom: 12.35rem;
+  right: 0.5rem;
 }
 
 .navBtn {
-  justify-content: center;
-  background-color: lightgreen;
-  border-style: solid;
-  border-color: lightgreen;
-  color: green;
-  cursor: pointer;
-  width: 5rem;
+    background-color: lightgreen;
+    border-style:solid;
+    border-color:lightgreen;
+    color:green;
+    cursor:pointer;
+    width:14.02rem;   
 }
 
 .navBtn:hover {
-  border-color: #e6ffe6;
-  background-color: #e6ffe6;
+    border-color:#e6ffe6;
+    background-color: #e6ffe6;
 }
 
 .tabText {
-  position: relative;
-  right: 5rem;
-  font-size: 1.1em;
+    position:relative;
+    right:5rem;
+    font-size:1.1em;
 }
