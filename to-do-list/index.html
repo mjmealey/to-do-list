@@ -3,9 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Gabarito&family=Inter:wght@700&family=Open+Sans:wght@300;400&family=Playfair+Display&family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gabarito&family=Inter:wght@700&family=Open+Sans:wght@300;400&family=Playfair+Display&family=Poppins:wght@200&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="src/style.css" />
     <title>To-Do-List</title>
   </head>
@@ -14,16 +17,18 @@
       <h1 id="logo">Oh What To Do</h1>
     </header>
     <main id="toDos">
-      <h2 id="inboxToDo">Inbox</h2>
+      <h2 id="inboxToDo" data-testid="sideBarInbox">Inbox</h2>
       <button class="plus" id="addTask">
         <p class="plus" id="plusSign">+</p>
         &nbsp; &nbsp;
-        <p class="plus" id="taskAdd">Add a task</p>
+        <p class="plus">Add a task</p>
       </button>
-      <h2 id="free">Free of to do's</h2>
+      <h2 id="noTasks">Free of to do's</h2>
     </main>
     <nav id="sidebar">
       <button class="navBtn"><p class="tabText">Inbox</p></button>
     </nav>
+
+    <script type="module" src="./app.js"></script>
   </body>
 </html>
