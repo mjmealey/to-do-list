@@ -10,17 +10,23 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="src/style.css" />
-    <title>Tasks</title>
+    <title>To-Do-List</title>
   </head>
   <body>
     <header>
-      <h1 id="logo">Oh What To Do</h1>
+      <h1 id="logo">To Do List</h1>
     </header>
+    <main id="toDos">
+      <h2 id="todayToDo">Inbox</h2>
+      <button class="plus" id="addTask">
+        <p class="plus" id="plusSign">+</p>
+        &nbsp; &nbsp;
+        <p class="plus" id="taskAdd">Add a task</p>
+      </button>
+      <h2 id="free">Free of to do's</h2>
+    </main>
     <nav id="sidebar">
-      <button class="navBtn">Inbox</button>
-      <button class="navBtn">Today</button>
-      <button class="navBtn">Projects</button>
+      <button class="navBtn"><p class="tabText">Inbox</p></button>
     </nav>
-   
   </body>
 </html>
