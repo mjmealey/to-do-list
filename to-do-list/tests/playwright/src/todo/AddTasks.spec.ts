@@ -5,7 +5,7 @@ const addTask: string = "#addTask";
 test.beforeEach(async ({ page }) => {
   const link: string = "http://localhost:5173/";
   await page.goto(link);
-  await page.locator("#addTask").click()
+  await page.locator("#addTask").click();
 });
 
 test("remove addTasks", async ({ page }) => {
@@ -18,5 +18,15 @@ test("remove addTasks", async ({ page }) => {
 test("remove noTasks", async ({ page }) => {
   const noTasks: string = "#noTasks";
   const locateNoTasks: Locator = page.locator(noTasks);
-  expect(locateNoTasks.evaluate((task) => (task.style.display = "none")));
+  expect(await locateNoTasks.evaluate((task) => (task.style.display = "none")));
+});
+
+test("add taskBlock to toDos main element and append every element for taskBlock", async ({ page }) => {
+  const toDos = "#toDos"
+  await page.locator(toDos).waitFor()
+  const taskBlock = "#taskBlock"
+  await page.locator(taskBlock).waitFor()
+  const nameLabel = "#nameLabel"
+  const nameLabelText = "Name"
+  page.locator(nameLabel).getByText(nameLabelText)
 });
