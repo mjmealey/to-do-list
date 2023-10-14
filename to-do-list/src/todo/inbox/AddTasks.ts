@@ -1,5 +1,4 @@
 const AddTasksToInbox = () => {
-    
   const addTask = document.getElementById("addTask") as HTMLButtonElement;
   const removeElements = (empty: string) => {
     addTask.style.display = empty;
@@ -11,13 +10,13 @@ const AddTasksToInbox = () => {
     const taskBlock = document.createElement("div");
     taskBlock.id = "taskBlock";
     taskBlock.style.backgroundColor = "green";
-    taskBlock.style.width = "50rem"
-    taskBlock.style.padding = "20px"
-    const toDos = document.getElementById("toDos") as HTMLDivElement
+    taskBlock.style.width = "50rem";
+    taskBlock.style.padding = "20px";
+    const toDos = document.getElementById("toDos") as HTMLDivElement;
     toDos.appendChild(taskBlock);
     const nameLabel = document.createElement(label) as HTMLElement;
-    nameLabel.innerText = "Name";
-    nameLabel.id = "nameLabel"
+    nameLabel.id = "nameLabel";
+    nameLabel.textContent = "Name";
     taskBlock.appendChild(nameLabel);
   };
 
@@ -27,7 +26,7 @@ const AddTasksToInbox = () => {
 
   addTask.addEventListener("click", () => {
     addTasks();
-    displayTaskAdd("label")
+    displayTaskAdd("label");
   });
 };
 
