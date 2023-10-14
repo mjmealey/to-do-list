@@ -34,7 +34,7 @@ nav {
 
 #toDos {
   position:relative;
-  top:2rem;
+  bottom:75rem;
 }
 
 #inboxToDo {
@@ -74,7 +74,7 @@ nav {
   width: 11.5rem;
   height: 80rem;
   position: relative;
-  bottom: 12.35rem;
+  bottom: 0.5rem;
   right: 0.5rem;
 }
 
