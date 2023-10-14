@@ -1,8 +1,7 @@
-
+import {toDo} from "./dist/toDo.js"
 
 const toDoApp = () => {
-  const newToDo = ToDo();
-  newToDo.toDo();
+  toDo()
 };
 
 toDoApp()
