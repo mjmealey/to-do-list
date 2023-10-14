@@ -15,9 +15,10 @@ const AddTasksToInbox = () => {
     taskBlock.style.padding = "20px"
     const toDos = document.getElementById("toDos") as HTMLDivElement
     toDos.appendChild(taskBlock);
-    const nameOfTask = document.createElement(label) as HTMLElement;
-    nameOfTask.innerText = "Name";
-    taskBlock.appendChild(nameOfTask);
+    const nameLabel = document.createElement(label) as HTMLElement;
+    nameLabel.innerText = "Name";
+    nameLabel.id = "nameLabel"
+    taskBlock.appendChild(nameLabel);
   };
 
   const addTasks = () => {
